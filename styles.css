@@ -1,0 +1,526 @@
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+.standard-container{
+    max-width: 1280px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Hero Section */
+
+.hero{
+    height: 100vh;
+    background-color: grey;
+    background-image: url("img/hero.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: 50% 80%;
+    display: flex;
+    justify-content:flex-end;
+    align-items:center;
+    flex-direction: column;
+    background-blend-mode:multiply;
+
+}
+
+
+h1{
+    color: white;
+     font-size: 75px;
+     margin: 0;
+     font-weight:lighter;
+}
+
+.readmore{
+    color: white;
+    margin-bottom: 30px;
+    font-family:sans-serif;
+}
+.vline{
+    border-left: 2px solid white;
+    left: 50%;
+    height: 90px;
+    margin-top: 4px;
+}
+
+/* about section */
+
+.about{
+    background-color: #111111;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+
+
+}
+.textcontainer{
+    display: flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center
+    
+
+    
+
+}
+
+    h2{  
+        color: white;
+        font-size: 70px;
+        text-align:center;
+        margin:0;
+        font-weight:lighter;
+
+    }
+
+    .abtext{
+        font-size: 18px;
+        color: white;
+        text-align:left;
+        max-width:40vw;
+        font-family:sans-serif;
+    }
+
+
+.man{
+    
+    height: 400px;
+
+}
+
+/* Icon Section */
+
+.redbox{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+    background-color: #b40000
+}
+
+
+    .iconitem{
+        display: flex;
+        align-items:center;
+    }
+
+        .pic1{
+            height: 70px;
+            margin-right:8px;
+
+        }
+        .icontextwrapper{
+        display: flex;
+        flex-direction: column;
+
+}
+            .number1{
+                color: white;
+                font-size: 35px;
+                align-content: flex-start;
+                margin:0;
+
+
+
+            }
+            .text1{
+                color: white;
+                font-size: 22px;
+                margin:0;
+
+            }
+
+
+
+
+/* Grid Section */
+
+.photogrid{
+    background-color:#111111;
+    padding:60px;
+    padding-bottom: 80px;
+    display: grid;
+    grid-template-columns:
+        [col-start]1fr 
+        [col-2]1fr 
+        [col-3]1fr 
+        [col-end];
+    grid-template-rows: 
+    3fr 
+    4fr 
+    4fr 
+    4fr;
+    grid-template-areas: 
+        "header header header"
+        "topleft topleft topright"
+        "bottomleft colour topright"
+        "bottomleft bottomright bottomright";
+    column-gap:1%;
+    row-gap: 1%;
+}
+.header{
+    font-size: 20px;
+    grid-area: header;
+    align-self: end;
+
+}
+h3{
+    font-size: 75px;
+    margin:0;
+    text-align:left;
+    color: white;
+    font-weight:lighter;
+}
+.colourtext{
+    max-width:65%;
+    text-align:left;
+    margin-bottom: 70px;
+    margin-top:0;
+    color: white;
+    font-family:sans-serif;
+}
+.topleft{
+    background-image: url("img/front.jpg");
+    background-position: center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    text-align: center;
+    font-size: 40px;
+    grid-area: topleft;
+}
+
+.topright{
+    background-image: url("img/steering1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-size: 40px;
+    grid-area: topright;
+}
+.scuderia{
+    text-align: center;
+    font-size: 40px;
+    grid-area: colour;
+    justify-self:center;
+    align-self:center;
+}
+h4{
+    font-size:75px;
+    margin:0;
+    color:white;
+    font-weight:lighter;
+
+}
+.bottomleft{
+    background-image: url("img/f1.jpg");
+    background-position: center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    text-align: center;
+    font-size: 40px;
+    grid-area: bottomleft;
+}
+.bottomright{
+    background-image: url("img/back.jpg");
+    background-position: center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    text-align: center;
+    font-size: 40px;
+    grid-area: bottomright;
+}
+
+/* Quote Section */
+
+.charles{
+    background-color:#b40000;
+    display: flex;
+    padding-top:100px;
+    padding-bottom:100px;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+}
+.quote{
+    color:white;
+    font-size: 20px;
+    text-align: center;
+    max-width: 70%;
+    font-style: italic;
+}
+.name{
+    color:white;
+    font-size: 32px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+
+/* Blog Section */
+
+.interestingredcars{
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #111111;
+    padding-top: 70px;
+    font-family:sans-serif;
+    
+}
+
+    h5{
+        font-size: 75px;
+        color: white;
+        margin: 0;
+        margin-left:10px;
+        font-family:serif;
+        font-weight:lighter;
+    }
+
+.interestingtext{
+    color:white;
+    margin-top: 20px;
+    margin-bottom:60px;
+    margin-left:10px;
+    line-height:20px;
+
+}
+
+
+.blogline{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom:50px;
+
+}
+
+    .blogsquare{
+        width:33%;
+        display:flex;
+        flex-direction:column;
+        background-color:rgb(32, 32, 32);
+        min-width:0;
+        margin-left:10px;
+         margin-right:10px;
+
+
+    }
+
+
+
+        .blog1{
+            background-image:url("img/engine.jpg");
+        }
+        .blog2{
+            background-image: url("img/steering2.jpg");
+        }
+        .blog3{
+            background-image: url("img/wheel.jpg");
+        }
+        .blogimage{
+            display:flex;
+            flex-direction:column;
+            justify-content: flex-end;
+            height:250px;
+            background-position: center;
+            background-size:cover;
+            background-repeat:no-repeat;
+        }
+        .blogtag{
+            background-color:red;
+            width: fit-content;
+            padding: 7px 15px;
+            margin:8px;
+            
+        }
+            .tag{
+                margin:0;
+                font-size:12px;
+                color:white;
+            }
+
+        .blogtext{
+            background-color:rgb(32, 32, 32);
+            color:white;
+            padding: 20px;
+            padding-top:0;
+            line-height:20px;
+        }
+            .blogheader{
+                color: white;
+                font-size: 25px;
+                margin-top:25px;
+                margin-bottom:0px;
+                font-family:serif;
+            }
+            .blogdate{
+                color: white;
+                font-size:12px;
+                margin-top:18px;
+                margin-bottom:18px;
+            }
+
+            .bloginfo{
+                color:white;
+                max-width: fit-content;
+                margin-top: 0;
+            }
+
+    
+    /* Contact Section */
+    .contact{
+        background-color:#111111;
+        display:flex;
+        justify-content: space-between;
+        padding-top:40px;
+        padding-left:60px;
+        padding-right:60px;
+        padding-bottom:50px;
+        font-family:sans-serif;
+
+    }
+        .contacttextwrapper{
+            display:flex;
+            flex-direction: column;
+            max-width:50%;
+            align-content:left;
+        }
+            h6{
+                font-size: 75px;
+                color:white;
+                margin:0;
+                font-family:serif;
+                font-weight:lighter;
+            }
+            .contactinfo{
+                color:white;
+                text-align:left;
+                line-height:20px;
+            }
+
+
+
+
+
+            .formbox{
+                padding:20px;
+                background-color:rgb(32, 32, 32);
+                display:flex;
+                flex-direction: column;
+                align-items:stretch;
+    
+            }
+            .form-names-line{
+                display: flex;
+    
+            }
+
+
+
+            
+            /* OLD GRID
+        .formgrid{
+            display:grid;
+            padding:20px;
+            padding-bottom:45px;
+            background-color:rgb(32, 32, 32);
+            grid-template-columns:
+            [col-start]1fr 
+            [col-2]1fr 
+            [col-end];
+            
+            grid-template-rows: 
+            1fr 
+            1fr 
+            2.5fr
+            1fr;
+            
+            grid-template-areas:
+            "firstname lastname"
+            "email email"
+            "question question"
+            "submit .";
+            
+            column-gap:20px;
+            row-gap:20px;
+            min-width:40%;
+
+        }
+        */
+
+
+
+        /* OLD GRID
+        .formbox{
+            background-color: rgb(65, 65, 65);
+            padding:10px;
+            padding-left: 20px;
+        }
+            .firstname{
+                grid-area:firstname;
+            }
+            .lastname{
+                grid-area:lastname;
+            }
+            .email{
+                grid-area:email;
+            }
+            .question{
+                grid-area:question;
+            }
+            .submit{
+                background-color:red;
+                grid-area:submit;
+                padding:10px;
+                justify-content: center;
+            }
+            .submittext{
+                color:white;
+                text-align:center;
+                font-size:30px;
+                margin-top:5px;
+                margin-bottom:0;
+            }
+
+                .formtext{
+                    color:white;
+                    background-color:rgb(65, 65, 65);
+
+                }
+                */
+    .footer{
+        background-color:rgb(32, 32, 32);
+        padding:60px;
+        padding-top:100px;
+        padding-bottom:100px;
+    }
+    .footertextwrapper{
+        color:white;
+        text-align:left;
+        max-width:35%;
+    }
+    .footerheader{
+        font-weight:bold;
+        margin:0;
+        margin-bottom:30px;
+        font-size:23px;
+    }
+    .footertext{
+        font-family:sans-serif;
+        line-height:20px;
+    }
+
+    .footericon{
+        height:25px;
+        margin-right:10px;
+    }
+body {
+    background-color: grey;
+}
