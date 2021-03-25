@@ -506,12 +506,22 @@ h3{
 
 
 
-   /* @media screen and (max-width:1100px){
+    @media screen and (max-width:1100px){
 
         .about-content{
             flex-direction: column;
+
         }
-    } */
+        .textcontainer{
+            align-items:center;
+        }
+        .abtext{
+            max-width:70%;
+        }
+        .man{
+            height:407px;
+        }
+    } 
 
     @media screen and (max-width:930px){
 
