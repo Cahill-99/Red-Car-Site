@@ -1,0 +1,645 @@
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+
+/* STANDARD SETTINGS */
+.standard{
+    max-width: 1350px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left:60px;
+    padding-right:60px;
+
+}
+.header{
+    color:white;
+    font-size:75px;
+    margin:0;
+    font-weight: lighter;
+    font-family:serif;
+}
+.text{
+    font-size: 18px;
+    color: white;
+    font-family:sans-serif;
+    line-height:30px;
+}
+
+
+/* HERO SECTION */
+
+.hero{
+    height: 100vh;
+    background-color: grey;
+    background-image: url("img/hero.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: 50% 80%;
+    display: flex;
+    justify-content:flex-end;
+    align-items:center;
+    flex-direction: column;
+    background-blend-mode:multiply;
+
+}
+
+
+
+
+.readmore{
+    margin-bottom: 30px;
+
+}
+.vline{
+    border-left: 2px solid white;
+    left: 50%;
+    height: 90px;
+    margin-top: 4px;
+}
+
+/* ABOUT SECTION */
+
+.about{
+    background-color: #111111;
+
+
+
+}
+.about-content{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left:100px;
+    padding-right:100px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+    gap:40px;
+}
+.textcontainer{
+    display: flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:flex-start;
+    
+
+    
+
+}
+
+    h2{  
+        text-align:left;
+
+    }
+
+    .abtext{
+        text-align:left;
+        max-width:80%;
+
+    }
+
+
+.man{
+    
+    height: 400px;
+
+}
+
+/* ICON SECTION */
+
+.redbox{
+    background-color: #b40000
+}
+    .icon-content{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-top: 120px;
+        padding-bottom: 120px;
+
+    }
+
+
+        .iconitem{
+            display: flex;
+            align-items:center;
+        }
+
+            .pic1{
+                height: 70px;
+                margin-right:8px;
+
+            }
+            .icontextwrapper{
+            display: flex;
+            flex-direction: column;
+
+            }
+                .number1{
+                    color: white;
+                    font-size: 35px;
+                    align-content: flex-start;
+                    margin:0;
+
+
+
+                }
+                .text1{
+                    color: white;
+                    font-size: 22px;
+                    margin:0;
+
+                }
+
+
+
+
+/* GRID SECTION */
+
+.photogrid{
+    background-color:#111111;
+}
+.grid-content{
+    padding-top:60px;
+    padding-bottom: 80px;
+    display: grid;
+    grid-template-columns:
+        [col-start]1fr 
+        [col-2]1fr 
+        [col-3]1fr 
+        [col-end];
+    grid-template-rows: 
+    3fr 
+    4fr 
+    4fr 
+    4fr;
+    grid-template-areas: 
+        "header header header"
+        "topleft topleft topright"
+        "bottomleft colour topright"
+        "bottomleft bottomright bottomright";
+    column-gap:1%;
+    row-gap: 1%;
+}
+
+.gridheader{
+    font-size: 20px;
+    grid-area: header;
+    align-self: end;
+
+}
+h3{
+    text-align:left;
+}
+.colourtext{
+    max-width:65%;
+    text-align:left;
+    margin-bottom: 70px;
+    margin-top:0;
+}
+.topleft{
+    background-image: url("img/front.jpg");
+    background-position: center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    text-align: center;
+    font-size: 40px;
+    grid-area: topleft;
+}
+
+.topright{
+    background-image: url("img/steering1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-size: 40px;
+    grid-area: topright;
+}
+.scuderia{
+    text-align: center;
+    font-size: 40px;
+    grid-area: colour;
+    justify-self:center;
+    align-self:center;
+}
+
+.bottomleft{
+    background-image: url("img/f1.jpg");
+    background-position: center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    text-align: center;
+    font-size: 40px;
+    grid-area: bottomleft;
+}
+.bottomright{
+    background-image: url("img/back.jpg");
+    background-position: center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    text-align: center;
+    font-size: 40px;
+    grid-area: bottomright;
+}
+
+/* QUOTE SECTION */
+
+.charles{
+    background-color:#b40000;
+
+}
+.quote-content{
+    display: flex;
+    padding-top:120px;
+    padding-bottom:120px;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+}
+.quote{
+    text-align: center;
+    max-width: 70%;
+    font-style: italic;
+}
+.name{
+    color:white;
+    font-size: 32px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+
+/* BLOG SECTION */
+
+.interestingredcars{
+    background-color: #111111;
+
+}
+.blog-content{
+    padding-top: 70px;
+    font-family:sans-serif;
+}
+
+    h5{
+        margin-left:20px;
+    }
+
+.interestingtext{
+    margin-top: 20px;
+    margin-bottom:60px;
+    margin-left:0px;
+
+}
+
+
+.blogline{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom:50px;
+
+}
+
+    .blogsquare{
+        width:33%;
+        display:flex;
+        flex-direction:column;
+        background-color:rgb(32, 32, 32);
+        min-width:0;
+        margin-left:10px;
+         margin-right:10px;
+
+
+    }
+
+
+
+        .blog1{
+            background-image:url("img/engine.jpg");
+        }
+        .blog2{
+            background-image: url("img/steering2.jpg");
+        }
+        .blog3{
+            background-image: url("img/wheel.jpg");
+        }
+        .blogimage{
+            display:flex;
+            flex-direction:column;
+            justify-content: flex-end;
+            height:250px;
+            background-position: center;
+            background-size:cover;
+            background-repeat:no-repeat;
+        }
+        .blogtag{
+            background-color:red;
+            width: fit-content;
+            padding: 7px 15px;
+            margin:8px;
+            
+        }
+            .tag{
+                margin:0;
+                font-size:12px;
+                color:white;
+            }
+
+        .blogtext{
+            background-color:rgb(32, 32, 32);
+            color:white;
+            padding: 20px;
+            padding-top:0;
+            line-height:20px;
+        }
+            .blogheader{
+                color: white;
+                font-size: 25px;
+                margin-top:25px;
+                margin-bottom:0px;
+                font-family:serif;
+            }
+            .blogdate{
+                color: white;
+                font-size:12px;
+                margin-top:18px;
+                margin-bottom:18px;
+            }
+
+            .bloginfo{
+                color:white;
+                max-width: fit-content;
+                margin-top: 0;
+            }
+
+    
+    /* CONTACT SECTION */
+
+
+    .contact{
+        background-color:#111111;
+
+
+    }
+    .contact-content{
+        display:flex;
+        justify-content: space-between;
+        padding-top:40px;
+        padding-left:60px;
+        padding-right:60px;
+        padding-bottom:50px;
+        font-family:sans-serif;
+        gap:30px;
+    }
+        .contacttextwrapper{
+            display:flex;
+            flex-direction: column;
+            max-width:50%;
+        }
+            .contactinfo{
+                text-align:left;
+            }
+
+
+            /* CONTACT FORM */
+
+
+            .formbox{
+                padding:20px;
+                padding-bottom:0;
+                background-color:rgb(32, 32, 32);
+                display:flex;
+                flex-direction: column;
+                justify-content:space-between;
+                min-width: 50%;
+                gap:40px;
+    
+            }
+                .formline{
+                    padding:20px;
+                    font-family:sans-serif;
+                    color:white;
+                    background-color:rgb(65, 65, 65);
+                    border-radius: 0;
+                    border-style:none;
+                    resize:none;
+                    
+                }
+                .form-names-line{
+                    display: flex;
+                    gap:40px;
+        
+                }
+                    #fname{
+                        min-width:0px;
+                        width:100%;
+
+                    }
+                    #lname{
+                        min-width:0px;
+                        width:100%;
+                    }
+
+                ::placeholder{
+                    color:white;
+                    opacity:1;
+                    font-size:15px;
+                }
+                .fav{
+                    padding-bottom:40px;
+                }
+
+                .submit{
+                    cursor:pointer;
+                    width:46%;
+                    padding:10px;
+                    background-color:#b40000;
+                    color:white;
+                    border-style:none;
+                    font-size:25px;
+                    font-family:serif;
+                    text-align:center;
+                    position:relative;
+                    top:20px;
+                    
+                }
+
+
+
+    /* FOOTER SECTION */
+
+
+    .footer{
+        background-color:rgb(32, 32, 32);
+
+    }
+    .footer-content{
+        padding:60px;
+        padding-top:100px;
+        padding-bottom:100px;
+    }
+    .footertextwrapper{
+        color:white;
+        text-align:left;
+        max-width:35%;
+    }
+    .footerheader{
+        font-weight:bold;
+        margin:0;
+        margin-bottom:30px;
+        font-size:23px;
+    }
+
+    .footericon{
+        height:25px;
+        margin-right:10px;
+    }
+
+
+
+
+
+
+    /***** MEDIA QUERIES *****/
+
+
+    @media screen and (max-width:930px){
+
+        .about-content{
+            flex-direction: column;
+        }
+    }
+    @media screen and (max-width:890px){
+        .contact-content{
+            flex-direction:column;
+        }
+        .contacttextwrapper{
+            max-width: 100%;
+        }
+    }
+    @media screen and (max-width: 760px){
+
+        .grid-content{
+            padding:60px;
+            padding-bottom: 100px;
+            display: grid;
+            grid-template-columns:
+                [col-start]1fr 
+                [col-2]1fr 
+                [col-end];
+            grid-template-rows: 
+            3fr 
+            2fr 
+            2fr 
+            3fr
+            2fr;
+            grid-template-areas: 
+                "header header"
+                "topleft topleft"
+                "bottomleft colour"
+                "bottomleft topright"
+                "bottomright bottomright";
+            column-gap:3%;
+            row-gap: 1%;
+        }
+        .topleft{
+            background-position:center;
+        }
+
+        .bottomright{
+            background-position:left;
+            background-size:cover;
+        }
+        .blogline{
+            flex-direction:column;
+            align-content:center;
+        }
+        .blogsquare{
+            width:100%;
+            margin-bottom:20px;
+            
+        }
+
+    }
+    @media screen and (max-width:700px){
+        .icon-content{
+            flex-direction:column;
+            padding-top:70px;
+            padding-bottom:20px;
+        }
+        .iconitem{
+            margin-bottom:50px;
+        }
+        .footertextwrapper{
+            max-width:100%;
+        }
+    }
+
+    @media screen and (max-width:600px){
+        .standard{
+            padding-left:25px;
+            padding-right:25px;
+        }
+        .header{
+            font-size:50px;
+        }
+        .about-content{
+            padding-left:50px;
+            padding-right:50px;
+        }
+        .man{
+            height:300px;
+        }
+        .text{
+            font-size:16px;
+        }
+        .submit{
+            font-size:17px;
+        }
+        .grid-content{
+            padding-bottom: 100px;
+            display: grid;
+            grid-template-columns:
+                [col-start]1fr 
+                [col-2]1fr 
+                [col-end];
+            grid-template-rows: 
+            3fr 
+            1fr 
+            1fr 
+            2fr
+            1fr;
+            grid-template-areas: 
+                "header header"
+                "topleft topleft"
+                "bottomleft colour"
+                "bottomleft topright"
+                "bottomright bottomright";
+            column-gap:3%;
+            row-gap: 1%;
+        }
+        .topleft{
+            background-position:center;
+        }
+
+        .bottomright{
+            background-position:left;
+            background-size:cover;
+        }
+        .blogline{
+            flex-direction:column;
+            align-content:center;
+        }
+        .blogsquare{
+            width:100%;
+            margin-bottom:20px;
+            
+        }
+        
+    }
+
+body {
+    background-color: grey;
+}

@@ -1,0 +1,306 @@
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+.hero{
+    height: 110vh;
+    background-color: red;
+    background-image: url("img/hero.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: 50% 80%;
+    display: flex;
+    justify-content:center;
+    align-items:flex-end;
+
+}
+
+h1{
+    color: white;
+     font-size: 75px;
+     text-align: center;
+     margin: 0;
+}
+
+
+
+.about{
+    background-color: #202020;
+    height: 85vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+
+
+}
+.textcontainer{
+    max-width: 50vw;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center
+    
+
+    
+
+}
+
+h2{  
+    color: white;
+    font-size: 70px;
+    text-align:center;
+    margin:0;
+
+
+}
+
+.abtext{
+    font-size: 18px;
+    color: white;
+    text-align:left;
+    max-width:40vw;
+}
+.about image{
+    height:auto;
+    width:auto;
+
+}
+
+
+.man{
+    
+    height: 70%;
+
+}
+
+.redbox{
+    display: flex;
+    max-width:-webkit-fill-available;
+    outline: solid yellow;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 6vw;
+    padding-right: 6vw;
+
+    background-color: #b40000
+}
+
+
+        .trophy{
+            height: 350px;
+            width:240px;
+        }
+
+            .pic1{
+                position:relative;
+                height: 70px;
+                top: 140px;
+                left: 0px;
+            }
+            .number1{
+                color: white;
+                font-size: 35px;
+                position:relative;
+                left: 75px;
+                top: 35px;
+            }
+            .text1{
+                color: white;
+                font-size: 22px;
+                position:relative;
+                left:80px;
+                top: 0px;
+            }
+
+
+        .wheel{
+             height: 350px;
+             width:240px;
+        }
+
+            .pic2{
+                position:relative;
+                height: 70px;
+                top: 140px;
+                left: 0px;
+            }
+            .number2{
+                color: white;
+                font-size: 35px;
+                position:relative;
+                left: 75px;
+                 top: 35px;
+            }
+            .text2{
+                color: white;
+                font-size: 22px;
+                position:relative;
+                left:80px;
+                top: 0px;
+            }
+
+
+        .seats{
+            height: 350px;
+            width:240px;
+        }
+
+            .pic3{
+                position:relative;
+                height: 70px;
+                top: 140px;
+                left: 0px;
+            }
+            .number3{
+                color: white;
+                font-size: 35px;
+                position:relative;
+                left: 75px;
+                top: 35px;
+            }
+            .text3{
+                color: white;
+                font-size: 22px;
+                position:relative;
+                left:80px;
+                top: 0px;
+            }
+
+
+        .colour{
+            height: fit-content;
+            width:fit-content;
+            outline:solid orange;
+        }
+
+            .pic4{
+                position:left;
+                height: 70px;
+                to/p: 140px;
+                lef/t: 0px;
+            }
+            .number4{
+                color: white;
+                font-size: 35px;
+                position:center;
+                le/ft: 75px;
+                to/p: 35px;
+            }
+            .text4{
+            color: white;
+            font-size: 22px;
+            position:relative;
+            left:80px;
+            top: 0px;
+            }
+                 
+.photogrid{
+    background-color:#202020;
+    height:190vh;
+    width:100%;
+    max-width:-webkit-fill-available;
+    padding:2%;
+    display: grid;
+    grid-template-columns:
+        [col-start]1fr 
+        [col-2]1fr 
+        [col-3]1fr 
+        [col-end];
+    grid-template-rows:
+        1fr
+        1fr
+        1fr 
+        1fr;
+    grid-template-areas: 
+        "header header header"
+        "topleft topleft topright"
+        "bottomleft colour topright"
+        "bottomleft bottomright bottomright";
+    grid-column-gap:1% ;
+    grid-row-gap: 1%;
+}
+.header{
+    backgroun/d-color: red;
+    outli/ne: solid black;
+    font-size: 20px;
+    grid-area: header;
+    align-self: end;
+
+    
+}
+h3{
+    font-size: 75px;
+    margin:0;
+    text-align:left;
+    color: white;
+}
+.colourtext{
+    max-width:65%;
+    text-align:left;
+    margin-bottom: 8vh;
+    margin-top:0;
+    color: white;
+}
+.topleft{
+    background-image: url("img/front.jpg");
+    background-position: center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    outl/ine: solid black;
+    text-align: center;
+    font-size: 40px;
+    grid-area: topleft;
+}
+
+.topright{
+    background-image: url("img/steering1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    outli/ne: solid black;
+    text-align: center;
+    font-size: 40px;
+    grid-area: topright;
+}
+.scuderia{
+    backgroun/d-color: red;
+    outl/ine: solid black;
+    text-align: center;
+    font-size: 40px;
+    grid-area: colour;
+    justify-self:center;
+    align-self:center;
+}
+h4{
+    font-size:75px;
+    margin:0;
+    color:white;
+
+
+}
+.bottomleft{
+    background-image: url("img/f1.jpg");
+    background-position: center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    outli/ne: solid black;
+    text-align: center;
+    font-size: 40px;
+    grid-area: bottomleft;
+}
+.bottomright{
+    background-image: url("img/back.jpg");
+    background-position: center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    outl/ine: solid black;
+    text-align: center;
+    font-size: 40px;
+    grid-area: bottomright;
+}
+body {
+    background-color: grey;
+    width: 98vw;
+}
