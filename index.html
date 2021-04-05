@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="styles.css">
+        <meta name="viewport" content="width=device-width">
     </head>
    
    
@@ -9,8 +10,7 @@
         
 
         <!--Hero Section-->
-      
-        <section class="hero">
+            <section class="hero">
             <div class= "herotext">
                 <h1 class="header">Fast cars are good</h1>
             </div>
@@ -18,9 +18,17 @@
             <div class="vline">
 
             </div>
-            <p class= "readmore text">
-                Read more
-            </p>
+            <!--
+                <p class= "readmore text">
+                    Read more
+                </p>-->
+                <button class="readmore text" onclick= "scrollWin()">Read more</button>
+                <script>
+                    function scrollWin() {
+                      window.scrollTo(0, 623);
+                    }
+                    </script>
+                
         </section>
 
 
@@ -35,7 +43,7 @@
                     Pri inermis omittam accumsan ut. Quot intellegam voluptatibus no eum,
                     id duo autem mundi reformidans, has eligendi consulatu ea. </p>
                 </div>
-                <div class="about image">
+                <div class="aboutimage">
                     <img class="man" src="img/man.jpg" alt= "man recording a ferrris exhaust sound">
                 </div>
             </div>

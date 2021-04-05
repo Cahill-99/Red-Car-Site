@@ -33,7 +33,7 @@ html, body{
 .hero{
     height: 100vh;
     background-color: grey;
-    background-image: url("img/hero.jpg");
+    background-image: url("img/hero2.jpg");
     background-size: cover;
     background-repeat:no-repeat;
     background-position: 50% 80%;
@@ -50,6 +50,9 @@ html, body{
 
 .readmore{
     margin-bottom: 30px;
+    background:none;
+    border:none;
+    cursor:pointer;
 
 }
 .vline{
@@ -90,21 +93,25 @@ html, body{
 
 }
 
+    .aboutimage{
+        min-width:45%;
+    }
+
     h2{  
         text-align:left;
+        max-width:none;
 
     }
 
     .abtext{
         text-align:left;
-        max-width:80%;
 
     }
 
 
 .man{
     
-    height: 400px;
+    max-width:100%;
 
 }
 
@@ -298,6 +305,7 @@ h3{
 .blogline{
     display: flex;
     justify-content: space-between;
+    gap:20px;
     padding-bottom:50px;
 
 }
@@ -308,8 +316,6 @@ h3{
         flex-direction:column;
         background-color:rgb(32, 32, 32);
         min-width:0;
-        margin-left:10px;
-         margin-right:10px;
 
 
     }
@@ -518,15 +524,12 @@ h3{
             flex-direction: column;
 
         }
-        .textcontainer{
-            align-items:center;
-        }
+
         .abtext{
-            max-width:70%;
+            max-width:none;
         }
-        .man{
-            height:407px;
-        }
+
+
     } 
 
     @media screen and (max-width:930px){
@@ -541,6 +544,9 @@ h3{
         }
         .contacttextwrapper{
             max-width: 100%;
+        }
+        .blogline{
+            gap:15px;
         }
     }
     @media screen and (max-width: 760px){
@@ -624,9 +630,6 @@ h3{
         }
         .textcontainer{
             align-items:flex-start;
-        }
-        .man{
-            height:300px;
         }
         .text{
             font-size:16px;
