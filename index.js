@@ -1,3 +1,5 @@
+console.log("it is working");
+
 let scrollingButton = document.getElementById("scrollBtn");
 scrollingButton.addEventListener("click", function(){
     window.scrollTo(0, 623);
