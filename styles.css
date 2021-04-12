@@ -35,7 +35,7 @@ html, body{
 .hero{
     height: 100vh;
     background-color: grey;
-    background-image: url("img/hero2.jpg");
+    background-image: url("img/hero2comp.jpg");
     background-size: cover;
     background-repeat:no-repeat;
     background-position: 50% 80%;
