@@ -12,6 +12,23 @@ window.scroll({
 });
                             
                
-/*into.addEventListener('click', (ev)=>{
-    by.scrollIntoView(true);
-}*/
+/* DROPDOWN MENU */
+
+document.getElementById("dropbtn").addEventListener("click", openMenu);
+
+function openMenu() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+
+
+/*PRICEPIC REVEAL*/
+
+let f12 = document.getElementById("car1");
+f12.addEventListener("click", function(f12){
+f12.target.classList.toggle("pricepic1.reveal")
+})
+
+
+
+

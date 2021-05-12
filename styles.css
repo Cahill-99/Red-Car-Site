@@ -382,6 +382,77 @@ h3{
                 margin-top: 0;
             }
 
+    /* PRICE SECTION */
+    .price-content{
+        display:flex;
+        flex-direction:row;
+        justify-content: space-evenly;
+    }
+    .price{
+    background-color:#111111;
+    }
+    .pricetext{
+        margin-top:0;
+    }
+    #dropbtn{
+        background-color: #b40000;
+        border:none;
+        padding:10px;
+        color:white;
+        font-size:25px;
+        font-family:serif;
+        text-align:center;
+    }
+    .list{
+        background-color:rgb(32, 32, 32);
+        color:white;
+    }
+    .list:hover{
+        cursor:pointer;
+        background-color: #111111;
+    }
+    .dropdown{
+        display:flex;
+        flex-direction:column;
+    }
+
+    #myDropdown{
+        display:none;
+    }
+    #myDropdown.show{
+        display:flex;
+        flex-direction: column;
+    }
+    .carpic{
+    max-width:400px;
+
+    }
+        
+    #pricepic1{
+        display:none;
+    }
+    #pricepic1.reveal{
+        display:flex;
+    }
+
+    #pricepic2{
+        display:none;
+    }
+    #pricepic2.show{
+        display:block;
+    }
+
+    #pricepic3{
+        display:none;
+    }
+    #pricepic3.show{
+        display:block;
+    }
+
+
+    
+    
+
     
     /* CONTACT SECTION */
 
@@ -553,9 +624,7 @@ h3{
     }
     @media screen and (max-width: 760px){
 
-        h2{
 
-        }
         .abtext{
             max-width:none;
         }
