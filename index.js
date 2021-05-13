@@ -24,10 +24,16 @@ function openMenu() {
 
 /*PRICEPIC REVEAL*/
 
-let f12 = document.getElementById("car1");
+/*let f12 = document.getElementById("car1");
 f12.addEventListener("click", function(f12){
 f12.target.classList.toggle("pricepic1.reveal")
-})
+})*/
+
+document.getElementById("car1").addEventListener("click", pic1reveal);
+
+function pic1reveal(){
+    document.getElementById("pricepic1").classList.toggle("reveal");
+}
 
 
 
