@@ -24,17 +24,31 @@ function openMenu() {
 
 /*PRICEPIC REVEAL*/
 
-/*let f12 = document.getElementById("car1");
-f12.addEventListener("click", function(f12){
-f12.target.classList.toggle("pricepic1.reveal")
-})*/
 
-document.getElementById("car1").addEventListener("click", pic1reveal);
+/*document.getElementById("car1").addEventListener("click", pic1reveal);
 
 function pic1reveal(){
     document.getElementById("pricepic1").classList.toggle("reveal");
 }
+*/
 
+document.getElementById("car1").addEventListener("click", pic1reveal);
 
+function pic1reveal(){
+    document.getElementById("price1").classList.toggle("reveal")
+    document.getElementByClassName("pricetext2").classList.toggle("hide");
+}
 
+document.getElementById("car2").addEventListener("click", pic2reveal);
 
+function pic2reveal(){
+    document.getElementById("price2").classList.toggle("reveal")
+    document.getElementByClassName("pricetext2").classList.toggle("hide");
+}
+
+document.getElementById("car3").addEventListener("click", pic3reveal);
+
+function pic3reveal(){
+    document.getElementById("price3").classList.toggle("reveal")
+    document.getElementByClassName("pricetext2").classList.toggle("hide");
+}

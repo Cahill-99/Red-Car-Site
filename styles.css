@@ -398,14 +398,31 @@ h3{
         background-color: #b40000;
         border:none;
         padding:10px;
+        padding-left:45px;
+        padding-right:45px;
         color:white;
         font-size:25px;
         font-family:serif;
         text-align:center;
+        cursor:pointer;
     }
-    .list{
+    #car1{
         background-color:rgb(32, 32, 32);
         color:white;
+        border:none;
+        cursor:pointer;
+    }
+    #car2{
+        background-color:rgb(32, 32, 32);
+        color:white;
+        border:none;
+        cursor:pointer;
+    }
+    #car3{
+        background-color:rgb(32, 32, 32);
+        color:white;
+        border:none;
+        cursor:pointer;
     }
     .list:hover{
         cursor:pointer;
@@ -428,25 +445,44 @@ h3{
 
     }
         
-    #pricepic1{
+
+
+    #pricepic{
+        width:400px;
+        height:300px;
+    }
+
+    #pricetext2.hide{
         display:none;
     }
-    #pricepic1.reveal{
+
+    #price1{
+        display:none;
+    }
+    #price1.reveal{
         display:block;
     }
 
-    #pricepic2{
+    #price2{
         display:none;
     }
-    #pricepic2.show{
+    #price2.reveal{
         display:block;
     }
 
-    #pricepic3{
+    #price3{
         display:none;
     }
-    #pricepic3.show{
+    #price3.reveal{
         display:block;
+    }
+
+
+
+
+
+    #priceinfo{
+        padding-bottom:200px;
     }
 
 
