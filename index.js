@@ -35,20 +35,43 @@ function pic1reveal(){
 document.getElementById("car1").addEventListener("click", pic1reveal);
 
 function pic1reveal(){
-    document.getElementById("price1").classList.toggle("reveal")
-    document.getElementByClassName("pricetext2").classList.toggle("hide");
+    document.getElementById("price1").classList.toggle("reveal");
+
+}
+
+document.getElementById("car1").addEventListener("click", pic1isolate);
+
+function pic1isolate(){
+    document.getElementById("price2").classList.toggle("hide")
+    document.getElementById("price3").classList.toggle("hide")
+
 }
 
 document.getElementById("car2").addEventListener("click", pic2reveal);
 
 function pic2reveal(){
-    document.getElementById("price2").classList.toggle("reveal")
-    document.getElementByClassName("pricetext2").classList.toggle("hide");
+    document.getElementById("price2").classList.toggle("reveal");
+
 }
 
+document.getElementById("car2").addEventListener("click", pic2isolate);
+
+function pic2isolate(){
+    document.getElementById("price1").classList.toggle("hide")
+    document.getElementById("price3").classList.toggle("hide")
+
+}
 document.getElementById("car3").addEventListener("click", pic3reveal);
 
 function pic3reveal(){
-    document.getElementById("price3").classList.toggle("reveal")
-    document.getElementByClassName("pricetext2").classList.toggle("hide");
+    document.getElementById("price3").classList.toggle("reveal");
+
+}
+
+document.getElementById("car3").addEventListener("click", pic3isolate);
+
+function pic2isolate(){
+    document.getElementById("price1").classList.toggle("hide")
+    document.getElementById("price2").classList.toggle("hide")
+
 }

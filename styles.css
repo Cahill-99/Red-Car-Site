@@ -456,26 +456,39 @@ h3{
         display:none;
     }
 
+
     #price1{
+        display:none;
+    }
+    #price1.hide{
         display:none;
     }
     #price1.reveal{
         display:block;
     }
+    
 
     #price2{
+        display:none;
+    }
+    #price2.hide{
         display:none;
     }
     #price2.reveal{
         display:block;
     }
+    
 
     #price3{
+        display:none;
+    }
+    #price3.hide{
         display:none;
     }
     #price3.reveal{
         display:block;
     }
+    
 
 
 
